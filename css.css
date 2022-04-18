@@ -1,0 +1,44 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width:100%;
+    height: 100%;
+    background:url("./2.jpg");
+    background-size: cover;
+    position:relative;
+}
+.effect {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.effect h1 {
+    font-size:100px;
+    text-transform: uppercase;
+    background:url("./3.jpg");
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    background-position: 10px;
+    animation: ani 5s infinite linear;
+    background-repeat: repeat-x;
+}
+
+@keyframes ani {
+    0%{
+        background-position:left 0px top 80px;
+    }
+    50%{
+        background-position:left 400px top -210px;
+    }
+    100%{
+        background-position: left 0px top 80px;
+    }
+    
+}
